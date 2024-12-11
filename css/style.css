@@ -88,6 +88,12 @@ a {
     gap: 30px;
 }
 
+.hebergements h2
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -139,7 +145,7 @@ a {
 .onglet
 {
     display: flex;
-    left: 1096px;
+    /* left: 1096px; */
     padding: 0px 50px 0px 50px;
     gap: 68px;
 }
@@ -177,12 +183,6 @@ a {
     border-top: 2px #0065FC solid;
 }
 
-/*Onglet de navigation pour le format portable*/
-.portable-onglet
-{
-    display: none;
-}
-
 /*section info, barre recherche, filtres*/
 .section-info
 {
@@ -211,7 +211,7 @@ a {
     font-weight: 400;
 }
 
-.test
+.search
 {
     display: flex;
     border-radius: 10px;
@@ -286,14 +286,11 @@ a {
     padding: 4px 19px 4px 19px;
     height: 50px;
     align-items: center;
-    font-size: 12px;
     border-radius: 100px;
     border: 2px #d2d2d2 solid;
     background-color: #ffffff;
     font-size: 14px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
 }
 
 .button-filtres .fa-solid
@@ -462,6 +459,7 @@ main
     flex-direction: column;
     gap: 4px;
     border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card-contenu
@@ -588,7 +586,6 @@ main
     .button-filtres
     {
         width: 162px;
-        font-size: 14px;
         justify-content: start;
     }
 
@@ -607,7 +604,11 @@ main
 
     .onglet
     {
-        display: none;
+        display: flex;
+        height: 35px;
+        padding: 0;
+        gap: 0;
+        text-align: center;
     }
 
     .onglet-footer
