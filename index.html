@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -49,13 +49,13 @@
     <section class="section-info">
 
       <div class="section-info-titre">
-        <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
+        <h1 id="titre">Trouvez votre hebergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
       </div>
 
-      <form action="" method="get" class="search">
+      <form method="get" class="search">
         <div class="icone"><i class="fa-solid fa-location-dot"></i></div>
-        <input class="bar-recherche" type="search" name="" id="" placeholder="Marseille,France">
+        <input class="bar-recherche" type="search" name="bar_recherche" placeholder="Marseille,France" aria-describedby="titre">
         <input class="button-bar-recherche" type="submit" value="Recherche">
         <button type="submit" class="icone-bar-recherche"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
@@ -67,16 +67,16 @@
         <div class="listes">
 
           <button class="button-filtres">
-            <i class="fa-solid fa-money-bill" style="color: #0065FC"></i>Économique
+            <i class="fa-solid fa-money-bill button-colors"></i>Économique
           </button>
           <button class="button-filtres">
-            <i class="fa-solid fa-person" style="color: #0065FC"></i>Familial
+            <i class="fa-solid fa-person button-colors"></i>Familial
           </button>
           <button class="button-filtres">
-            <i class="fa-solid fa-heart" style="color: #0065FC"></i>Romantique
+            <i class="fa-solid fa-heart button-colors"></i>Romantique
           </button>
           <button class="button-filtres">
-            <i class="fa-solid fa-fire" style="color: #0065FC"></i>Nos pépites
+            <i class="fa-solid fa-fire button-colors"></i>Nos pépites
           </button>
 
         </div>
@@ -85,7 +85,7 @@
 
       <div class="info-logement">
         <div>
-          <i class="fa-solid fa-info" style="color: #0065FC"></i>
+          <i class="fa-solid fa-info button-colors"></i>
         </div>
 
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -94,7 +94,7 @@
     </section>
 
 
-    <section>
+    <div>
 
       <div class="hebergements-and-populaires">
 
@@ -338,7 +338,7 @@
 
       </div>
 
-    </section>
+    </div>
 
 
     <section>
@@ -347,7 +347,7 @@
 
         <h2>Activités à Marseille</h2>
 
-        <section class="bloc-activites">
+        <div class="bloc-activites">
 
           <a href="#" class="card-activites">
             <img class="img-card-activites" src="./images/activites/reno-laithienne.jpg" alt="">
@@ -369,7 +369,7 @@
             <p>Notre-Dame-de-la-Garde</p>
           </a>
 
-        </section>
+        </div>
 
       </div>
 

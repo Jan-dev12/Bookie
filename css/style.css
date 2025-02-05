@@ -170,7 +170,6 @@ main {
     height: 19px;
     padding: 30px 50px 30px 50px;
     gap: 10px;
-    opacity: 0px;
 
 }
 
@@ -296,6 +295,11 @@ main {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+}
+
+.button-colors
+{
+    color: #0065FC;
 }
 
 .button-filtres {
@@ -444,7 +448,7 @@ p .fa-solid {
 .card-activites p {
     padding: 20px 19px;
     gap: 10px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     text-align: left;
     height: 22px;
@@ -580,6 +584,7 @@ p .fa-solid {
         padding: 0px;
         flex: 1;
         box-sizing: border-box;
+        border-bottom: 2px #F2F2F2 solid;
     }
 
     .bloc:hover {
